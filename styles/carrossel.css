@@ -8,18 +8,14 @@
     padding: 1em 0 0.5em 0;
 }
 
-/*o bloco do swiper, e depois img, para pegar todas as imagens*/
 .swiper-slide img {
-    width: 100%; /*para as imgens ocuparem 100% do espaço do container pai*/
-}
+    width: 100%; }
 
 .swiper-button-prev, .swiper-button-next {
-    display: none; /*as setas do lado dos slides*/
-}
+    display: none; }
 
 .swiper-pagination {
-    position: initial; /*essa classe é o das bolinhas que passam para o lado*/
-    margin: 0.5em 0;
+    position: initial;     margin: 0.5em 0;
 }
 
 .card__descricao {
@@ -28,13 +24,11 @@
     margin-bottom: 0.5em;
 }
 
-.card__botoes { /*o justify content, vai transformar os itens filhos e flex itens, e o space between, vai espaçar os itens que são os flex itens*/
-    display: flex;
+.card__botoes {     display: flex;
     justify-content: space-between;
 }
 
-.botoes { /*nos botões também, pq por ser uma lista, um item vai embaixo do outro*/
-    display: flex;
+.botoes {     display: flex;
     align-items: center;
 }
 
@@ -106,8 +100,7 @@
     
     .swiper-button-prev, 
     .swiper-button-next {
-        display: block; /*as setas do lado dos slides*/
-        top: 60%;
+        display: block;         top: 60%;
     }
 
     .card {

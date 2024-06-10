@@ -1,8 +1,7 @@
 .banner {
     background: var(--azul-degrade);
     color: var(--branco);
-    text-align: center; /*não é o flex box e justify content para centralizar texto na vertial, um em cima do outro, e sim o text align, justify colocaria um do lado do outro*/
-    padding: 2.5em 2em;
+    text-align: center;     padding: 2.5em 2em;
 }
 
 .banner__titulo {
@@ -14,30 +13,19 @@
 .banner__texto {
     font-family: var(--font-principal);
     font-weight: 400;
-    margin: 1em 0; /*1em tanto em cima quanto em baixo e 0 dos lados*/
-    
+    margin: 1em 0;     
 }
 
 .banner__search {
-    background-color: transparent; /*para ficar transparente(com a mesma cor de fundo)*/
-    border: 1px solid var(--branco); /*criar a borda, primeiro valor = grossura da borda, segundo = uma linha como borda/podia ser tracejado, terceiro = cor da borda */
-    color: var(--branco); /*cor de quando digitar*/
-    border-radius: 24px; /*arredondar as bordas*/
-    padding: 1em; /*espaçando em cima e dos lados*/
-    width: 100%; /*e ajustando a largura*/
-    
+    background-color: transparent;     border: 1px solid var(--branco);     color: var(--branco);     border-radius: 24px;     padding: 1em;     width: 100%;     
 }
 
-/*placeholder pq faz referência a:<input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">*/
-/*ou seja, ao elemento placeholder dentro da classe banner__search*/
 .banner__search::placeholder {
     font-family: var(--font-principal);
     font-size: 14px;
     font-weight: 400;
     color: var(--branco);
-    background: url("../images/Pesquisa.svg") no-repeat; /*adicionando a imagem e coocando no repaet para não repetir em sequencia a imagem*/
-    background-position: 0.5em; /*ajustando a posição da lupa*/
-    text-align: center;
+    background: url("../images/Pesquisa.svg") no-repeat;     background-position: 0.5em;     text-align: center;
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,30 +1,22 @@
-.topicos__recentes { /*a section*/
-    text-align: center;
-    background: var(--azul-degrade); /*background em vez de background color pq a cor é gradiente, cheio de estilização*/
-    padding-bottom: 1em;
+.topicos__recentes {     text-align: center;
+    background: var(--azul-degrade);     padding-bottom: 1em;
 }
 
-.topicos__recentes-titulo { /*o titulo*/
-    font-family: var(--font-principal);
+.topicos__recentes-titulo {     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 200;
     color: var(--branco);
     padding: 1em 0em;
 }
 
-.topicos__recentes-lista { /* a lista desordenada onde será aplicado o display flex para tornar cada item um item flex */
-    display: flex;
-    flex-wrap: wrap; /*para quebrar linha e não tentar caber os flex itens, numa só linha*/
-    justify-content: center; /*centralizando os itens*/
-}
+.topicos__recentes-lista {     display: flex;
+    flex-wrap: wrap;     justify-content: center; }
 
 .topico__recente-item {
-    margin: 1.5em 1em; /*cada item da lista, separando um do outro*/
-}
+    margin: 1.5em 1em; }
 
 
-.topicos__recentes-link { /*o link propriamente dito*/
-    color: var(--branco);
+.topicos__recentes-link {     color: var(--branco);
     font-family: var(--font-principal);
     font-size: 14px;
     font-weight: 400;

@@ -1,31 +1,18 @@
 .cabecalho__menu-hamburguer {
-    width:40px; /* largura */
-    height: 40px; /* tamanho */
-    background-image: url("../images/Menu.svg");
+    width:40px;     height: 40px;     background-image: url("../images/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block; /* para posicionar a imagem em linha e bloco, a imagem é um menu hamburguer */
-}
+    display: inline-block; }
 
-/* dentro do cabecalho tem duas tags filho, duas divs */
-/* então quando eu aplico o display flex e space between na tag pai, ele separa as tags filhas, as duas divs, com um espaço no meio */
-/* pense no cabeçalho como uma grande caixa, as divs como duas caixas dentro da caixa, o display flex mep ermite mexer nessas caixas */
-/* e então coloquei um espaço entre ambasyuhhhhhhhhhhhhhhhh                                                                                                   c */
 .cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*significa que cria um contexto de posicionamento, continuara utilizando o mesmo espaço de antes*/
-    /*porém agora pode usar coordenadas para ajustar a posição, nesse caso do elemento pai*/
-    /*e graças a isso, os elementos filhos podem utilizar o position:absolute e então posicionar os elementos com top, left etc*/
-    /*em outras palavras, é o que permite adicionar left, bottom, top etc*/
-    position: relative;
+                    position: relative;
 }
 
 
-/*o seletor inteiro está dizendo: “Quando o .container__botao estiver marcado, aplique estilos ao .cabecalho__menu-hamburguer 
-que é um filho direto de .container__rotulo, que por sua vez é um irmão geral do .container__botao marcado*/
 .container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
     background-image: url("/images/Menu\ Aberto.svg");
 }
@@ -44,21 +31,15 @@ que é um filho direto de .container__rotulo, que por sua vez é um irmão geral
 }
 
 .lista-menu {
-    display: none; /* display: none = desaparece com os elementos, inicialmente oculta os elementos, nesse caso os itens da lista */
-    position: absolute;
+    display: none;     position: absolute;
     top: 100%;
-    width: 70vw; /*propriedade aplicada na lista, não nos itens da lista, na lista, para aumentar o background/largura, o fundo branco*/
-}
+    width: 70vw; }
 
-/* quando o checkbox estiver como checked, alterará  display da lista para block, mostrando assim os itens */
-/* acento tio = combinador css */
-.container__botao:checked ~ .lista-menu {  /* selecionando a classe do input checkbox, verificando se está checked, tio, para selecionar outra classe, então selecionando da lista e mostrando os itens*/
-    display: block;
+.container__botao:checked ~ .lista-menu {      display: block;
 }
 
 .lista-menu__titulo, .lista-menu__item {
-    padding: 1em; /*padding, além do espaçamento, permite colocar a cor de fundo graças ao espaçamento interno, que foi branco*/
-    background-color: var(--branco);
+    padding: 1em;     background-color: var(--branco);
     font-family: var(--font-principal);
     font-size: 16px;
     
@@ -70,17 +51,14 @@ que é um filho direto de .container__rotulo, que por sua vez é um irmão geral
 }
 
 .lista-menu__link {
-    /*as fontes e cores degrade é um copia e cola do figma*/
-    background: var(--azul-degrade);
+        background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
-    text-transform: uppercase; /*letra maiúscula*/
-}
+    text-transform: uppercase; }
 
 .container__botao {
-    display: none; /*sumindo com o botão de checkbox*/
-}
+    display: none; }
 
 .container__titulo {
     display: none;
@@ -99,7 +77,6 @@ que é um filho direto de .container__rotulo, que por sua vez é um irmão geral
 
 
 
-/*media query e min e não max, porque é mobile first*/
 @media screen and (min-width: 1024px) {
 
     .container__titulo, .container__titulo--negrito {
