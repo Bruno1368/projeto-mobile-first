@@ -1,0 +1,76 @@
+.topicos__recentes { /*a section*/
+    text-align: center;
+    background: var(--azul-degrade); /*background em vez de background color pq a cor é gradiente, cheio de estilização*/
+    padding-bottom: 1em;
+}
+
+.topicos__recentes-titulo { /*o titulo*/
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--branco);
+    padding: 1em 0em;
+}
+
+.topicos__recentes-lista { /* a lista desordenada onde será aplicado o display flex para tornar cada item um item flex */
+    display: flex;
+    flex-wrap: wrap; /*para quebrar linha e não tentar caber os flex itens, numa só linha*/
+    justify-content: center; /*centralizando os itens*/
+}
+
+.topico__recente-item {
+    margin: 1.5em 1em; /*cada item da lista, separando um do outro*/
+}
+
+
+.topicos__recentes-link { /*o link propriamente dito*/
+    color: var(--branco);
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: var(--laranja);
+    padding: 1em;
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    .topicos__recentes-titulo {
+        font-size: 24px;
+    }
+
+    .topicos__recentes-link {
+        font-size: 24px;
+        
+    }
+
+    .topico__recente-item {
+        margin: 2.5em 1.5em;
+    }
+
+    .topicos__recentes-lista { 
+        margin: 0 2em;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .topicos__recentes {
+        padding: 2em 25vw;
+        padding-bottom: 5em;
+    }
+
+    .topicos__recentes-titulo {
+        font-size: 32px;
+    }
+
+    .topicos__recentes-link {
+        font-size: 24;
+        font-weight: 700;
+    }
+
+    
+
+}
